@@ -16,9 +16,14 @@ RUN cd tmp &&\
 
 COPY ./docker-root /
 
-RUN rm -f /usr/share/sangfor/EasyConnect/resources/conf/easy_connect.json &&\
-    mv /usr/share/sangfor/EasyConnect/resources/conf/ /usr/share/sangfor/EasyConnect/resources/conf_backup &&\
-    ln -s /root/conf /usr/share/sangfor/EasyConnect/resources/conf
+RUN rm -f /usr/share/sangfor/EasyConnect/resources/conf/easy_connect.json
+
+COPY ./patch/patch-7.6.7.tar /patch-7.6.7.tar
+
+#RUN  ls -ltar /usr/share/sangfor/EasyConnect/resources
+
+RUN tar xvf patch-7.6.7.tar && cp -fr ./EasyConnect/resources/* /usr/share/sangfor/EasyConnect/resources/ && \
+rm -fr ./EasyConnect && rm -fr /patch-7.6.7.tar
 
 #ENV TYPE="" PASSWORD="" LOOP=""
 #ENV DISPLAY

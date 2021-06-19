@@ -1,0 +1,1 @@
+tar cvf patch-7.6.7.tar $(cat 7.6.7.list)

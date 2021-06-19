@@ -1,0 +1,15 @@
+EasyConnect/resources/bin/iptables-restore.txt
+EasyConnect/resources/bin/core
+EasyConnect/resources/bin/iptables-save.txt
+EasyConnect/resources/shell/open_browser.sh
+EasyConnect/resources/conf/need_hook_dns_server.ini
+EasyConnect/resources/conf/ConfModuleMap.xml
+EasyConnect/resources/conf/Module.xml
+EasyConnect/resources/conf/SurpportBrowser.xml
+EasyConnect/resources/conf/easy_connect.json
+EasyConnect/resources/conf/ecagent_conf.json
+EasyConnect/resources/conf/setting_root.json
+EasyConnect/resources/conf/LogConf.xml
+EasyConnect/resources/conf/Version.xml
+EasyConnect/resources/conf/pkg_version.xml
+EasyConnect/resources/conf/setting_ahoo.json
